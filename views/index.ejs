@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Ablaze &ndash; Image Upload</title>
+    <!-- Materialize needs jQuery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/99a410f591.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-content">
+      <div class="container my-container">
+          <!-- <img src= "./images/ablazelilith.png" alt="Ablaze" class="ablaze-brand-img"> -->
+          <h1 class="hero-title">Upload Images</h1>
+          <!-- if msg is not 'undefined' then display msg otherwise display nothing -->
+          <%= typeof msg != 'undefined' ? msg : '' %>
+
+          <form action="/" method="post" enctype="multipart/form-data">
+              <div class="file-field input-field upload-img-file-wrap">
+                <div class="btn black upload-img-file-btn">
+                  <span>Add Image File</span>
+                  <input type="file" name="postImage" required>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-large waves-effect waves-light upload-btn">Upload Now</button>
+          </form>
+
+          <% if (uploadedImage.length !== 0) { %>
+            <p class="text-link"><a href="/new-uploads">See uploaded images<i class="fa-solid fa-arrow-right text-link-icon right"></i></a></p>
+          <% } %>
+      </div>
+    </div>
+
+    <!-- jQuery Script -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script>
+    <!-- jQuery by Google -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <!-- Materialize Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Ablaze &ndash; New Uploads</title>
+    <!-- Materialize needs jQuery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/99a410f591.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container my-container subpage">
+          <!-- <img src="./images/ablazelilith.png" alt="Ablaze" class="ablaze-brand-img"> -->
+          <h1>New Uploads</h1>
+          <div>
+          <p class="text-link"><a href="/"><i class="fa-solid fa-arrow-left text-link-icon left"></i>Back to upload</a></p>
+            <p class="alert-message success"><i class="fa-solid fa-circle-check"></i>Your image was successfully uploaded.</p>
+        </div>
+            <div class="uploaded-image-list">
+                <% for (i = uploadedImage.length - 1; i >= 0 ; i--) { %>
+                    <div class="new-upload-img-wrap">
+                        <img src="./uploads/<%= uploadedImage[i] %>" class="new-upload-img" alt="New uploaded image">
+                        <p class="new-upload-img-name"><%= uploadedImage[i] %></p>
+                    </div>
+                <% } %>
+            </div>
+
+            <!-- <% if (uploadedImage.length == 0) { %>
+                <p class="alert-message failure"><i class="fa-solid fa-circle-xmark"></i>You haven't uploaded any images.</p>
+            <% } else { %>
+                <p class="alert-message success"><i class="fa-solid fa-circle-check"></i>Your image was successfully uploaded.</p>
+                <p class="text-link"><a href="/"><i class="fa-solid fa-arrow-left text-link-icon left"></i>Upload more</a></p>
+
+                <div class="uploaded-image-list">
+                    <% for (i = uploadedImage.length - 1; i >= 0 ; i--) { %>
+                    <img src="./uploads/<%= uploadedImage[i] %>" class="new-upload-img" alt="New uploaded image">
+                    <% } %>
+                </div>
+            <% } %> -->
+
+        </div>
+    </div>
+
+    <!-- jQuery Script -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script>
+    <!-- jQuery by Google -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <!-- Materialize Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

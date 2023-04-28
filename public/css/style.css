@@ -1,0 +1,177 @@
+body {
+    /* background-color: rgb(39 166 154 / 30%); */
+    /* background-color: rgb(39 166 154 / 25%); */
+    background-image: linear-gradient(0deg, rgb(39 166 154 / 30%), rgb(39 166 154 / 15%));
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.subpage {
+    padding: 6rem 0;
+}
+
+.ablaze-brand-img {
+    width: 80px;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+    filter: grayscale(.9);
+    margin-top: -2rem;
+    opacity: .9;
+}
+
+h1 {
+    font-size: 4.25rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    font-weight: 800;
+}
+
+.hero-title {
+    font-size: 5rem;
+    margin-top: -1rem;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+
+a {
+    color: #26a69a;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #2bbbad;
+    color: #1d7d74;
+}
+
+.my-container {
+    width: 800px;
+    margin: auto;
+}
+
+form {
+    margin-top: 3rem;
+    margin-top: 2.625rem;
+    display: flex;
+}
+
+form .upload-img-file-wrap {
+    width: 78%;
+}
+
+form button {
+    width: 22%;
+    margin-left: 30px;
+}
+
+.btn, .btn-small {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-large {
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.upload-img-file-btn {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.upload-btn {
+    margin-top: 1rem;
+}
+
+.alert-message {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 3.5rem;
+    margin-top: 2.5rem;
+}
+
+.alert-message i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.alert-message.success {
+    background-color: rgba(39, 153, 141, 0.2);
+    color: #18716a;
+}
+
+.alert-message.failure {
+    background-color: rgb(67 93 90 / 15%);
+    color: #547a76;
+}
+
+.text-link {
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.text-link a {
+    display: flex;
+}
+
+.text-link-icon {
+    border-radius: 50%;
+    padding: 7px 7.5px;
+    margin-top: -3px;
+    transition: all .1s ease;
+    font-size: 16px;
+
+    color: #26a69a;
+    font-size: 17px;
+    border: 2px solid #26a69a;
+    padding: 6px 6.5px;
+}
+
+a:hover .text-link-icon {
+    background-color: #1d7d74;
+    border: 2px solid #1d7d74;
+    color: white;
+}
+
+.text-link-icon.left {
+    margin-right: 12px;
+}
+
+.text-link-icon.right {
+    margin-left: 12px;
+}
+
+.uploaded-image-list {
+    margin-top: 3rem;
+}
+
+.new-upload-img-wrap {
+    margin-bottom: 2.5rem;
+}
+
+.new-upload-img-wrap:last-child {
+    margin-bottom: 0;
+}
+
+.new-upload-img {
+    border-radius: 8px;
+    max-width: 100%;
+    display: block;
+}
+
+.new-upload-img-name {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
